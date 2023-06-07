@@ -106,7 +106,7 @@ return require('packer').startup(function()
 	-- -- Comments
 	use('terrortylor/nvim-comment')
 	-- -- Autoclose Tags
-	-- 
-
 	use('windwp/nvim-ts-autotag')
+	-- -- Autopairs
+	use('windwp/nvim-autopairs')
 end)
