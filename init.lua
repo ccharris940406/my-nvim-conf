@@ -10,4 +10,6 @@ require('keymaps')
 require('addons_conf/chatgpt_conf')
 require('addons_conf.startup_conf')
 require('addons_conf.comments_conf')
-
+require('addons_conf.colorpicker_conf')
+require('addons_conf.hihglightcolor_conf')
+require('addons_conf.null-ls_conf')

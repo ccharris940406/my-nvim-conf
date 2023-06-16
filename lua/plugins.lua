@@ -21,7 +21,7 @@ require("packer").init({
 	},
 })
 
-return require('packer').startup(function()
+return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 
 	-- File Manager
@@ -109,4 +109,16 @@ return require('packer').startup(function()
 	use('windwp/nvim-ts-autotag')
 	-- -- Autopairs
 	use('windwp/nvim-autopairs')
+	-- -- Color picker
+	use({
+		"ziontee113/color-picker.nvim",
+		config = function()
+			require("color-picker")
+		end,
+	})
+	-- -- Highlight colors
+	use('brenoprata10/nvim-highlight-colors')
+	-- -- Formating code
+	use('jose-elias-alvarez/null-ls.nvim')
+
 end)
